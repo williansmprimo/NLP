@@ -1,0 +1,15 @@
+backend: "python"
+
+input {
+    name: "ENTRADA"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+}
+
+output {
+    name: "PREDICAO"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+}
+
+instance_group [{ kind: KIND_CPU }]
